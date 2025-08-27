@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Password Generator</title>
+	</head>
+	<body>
+		<div class="pg__main">
+			<h1>Password Generator</h1>
+			<div class="pg__container">
+				<input type="text" class="pg__display" id="pg__display" disabled />
+				<select name="pg__char" id="pg__char">
+					<option value="">0</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+				</select>
+				<div class="pg__buttons">
+					<button class="pgBtn" id="genBtn" onclick="passwordGenerate()">
+						Generate
+					</button>
+					<button class="pgBtn" id="copyBtn" onclick="passwordClipboard()">
+						Clipboard
+					</button>
+				</div>
+			</div>
+			<span class="copiedText">Password Copied!!!</span>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

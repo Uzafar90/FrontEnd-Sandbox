@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.wc__main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: pink;
+	height: 30rem;
+	width: 50rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+	background-color: #ffe6d3;
+	box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.25);
+}
+
+.wc__main h1 {
+	text-align: center;
+	font-size: 2rem;
+	color: rgb(59, 59, 59);
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 1.5rem 9.5rem;
+}
+
+.wc__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wc__inputSec {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	margin-top: 2rem;
+}
+
+.wc__grams {
+	padding: 2rem 5rem;
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	align-items: center;
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.25);
+}
+
+.wc__inputs input {
+	width: 25rem;
+	height: 5.5rem;
+	padding: 0 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.25);
+}
+
+.wc__selector {
+	display: flex;
+	gap: 6rem;
+	justify-content: space-around;
+	margin-top: 2rem;
+}
+
+.wc__selector select {
+	width: 18rem;
+	height: 3rem;
+	padding: 0 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	background: #c95f5f;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.25);
+}
+
+.btn {
+	background-color: #ffb37b;
+	color: white;
+	width: 18rem;
+	height: 3rem;
+	border-radius: 2rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.25);
+}
+
+.btn:hover {
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+}
+
+.wc__result {
+	margin-top: 2rem;
+	background-color: #fff;
+	width: 42rem;
+	padding: 2rem 10px;
+	text-align: justify;
+	border-radius: 10px;
+	font-size: 2rem;
+	box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.25);
+}
+
+.error {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.2rem;
+	color: rgb(213, 0, 0);
+	display: none;
+	align-self: center;
+}

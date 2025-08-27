@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Weight Conversion</title>
+	</head>
+	<body>
+		<div class="wc__main">
+			<h1>weight Conversion</h1>
+			<div class="wc__container">
+				<div class="wc__inputSec">
+					<div class="wc__grams">
+						<p>grams</p>
+					</div>
+					<div class="wc__inputs">
+						<input type="number" class="inputVal" id="inputVal" />
+					</div>
+				</div>
+				<div class="wc__selector">
+					<select class="valueSel" id="inputValueSelector">
+						<option value="pound">Pound</option>
+						<option value="kilogram">Kilogram</option>
+						<option value="ounces">Ounce</option>
+					</select>
+					<button class="btn" id="btn">Convert</button>
+				</div>
+				<span class="wc__result" id="wc__result"></span>
+			</div>
+			<span class="error" id="error">Please enter the valid Gram value</span>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

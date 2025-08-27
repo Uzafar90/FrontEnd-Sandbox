@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Racing Sans One', cursive;
+}
+
+.ac__main {
+	background: linear-gradient(134.55deg, #69ffb7 2.35%, #8de4ff 100%);
+	height: 100vh;
+	width: 100vw;
+}
+.wc__heading {
+	position: absolute;
+	text-transform: uppercase;
+	padding: 1rem;
+	font-size: 3rem;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.wc__container {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: black;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	border: 15px solid white;
+	outline: none;
+}
+.wc__clock {
+	color: white;
+}
+
+.wc__clock p {
+	color: #55ab82;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 17px;
+}
+
+.wc__clock span {
+	font-size: 3rem;
+	color: #01c2ff;
+}
+
+.wc__clock span:nth-child(1) {
+	position: absolute;
+	top: 7%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.wc__clock span:nth-child(2) {
+	position: absolute;
+	top: 50%;
+	right: -1%;
+	transform: translate(-50%, -50%);
+}
+
+.wc__clock span:nth-child(3) {
+	position: absolute;
+	bottom: -9%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.wc__clock span:nth-child(4) {
+	position: absolute;
+	top: 50%;
+	left: 6%;
+	transform: translate(-50%, -50%);
+}
+
+.wc__sticks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.wc__sticks div:nth-child(1) {
+	background-color: gray;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 9;
+}
+.wc__sticks div:nth-child(2) {
+	background-color: white;
+	width: 4px;
+	height: 90px;
+	position: absolute;
+	transform-origin: bottom center;
+	bottom: 50%;
+	transform: rotate(0deg);
+	border-radius: 50% 50% 0 0;
+	z-index: 6;
+}
+.wc__sticks div:nth-child(3) {
+	background-color: white;
+	width: 4px;
+	height: 120px;
+	position: absolute;
+	transform-origin: bottom center;
+	transform: rotate(0deg);
+	bottom: 50%;
+	border-radius: 50% 50% 0 0;
+	z-index: 6;
+}
+.wc__sticks div:nth-child(4) {
+	background-color: orange;
+	width: 2px;
+	height: 140px;
+	position: absolute;
+	transform-origin: bottom center;
+	bottom: 50%;
+	rotate: 90deg;
+	border-radius: 50% 50% 0 0;
+	z-index: 6;
+}

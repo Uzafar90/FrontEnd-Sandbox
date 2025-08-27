@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(108.2deg, #af0d7f 3.18%, #ad550e 100%);
+}
+
+.pg__main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 500px;
+	width: 700px;
+	background: linear-gradient(240.38deg, #ff35d2 0.54%, #f2db10 100.96%);
+	box-shadow: 0px 20px 30px rgba(60, 60, 60, 0.7);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.pg__main h1 {
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	text-shadow: 0px 0px 30px #161616;
+	color: white;
+}
+
+.pg__container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.pg__container .pg__display {
+	position: relative;
+	width: 600px;
+	height: 80px;
+	margin: 20px auto;
+	background-color: aliceblue;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.55);
+	text-align: center;
+	padding: 10px;
+	overflow: hidden;
+	font-size: 30px;
+	border-radius: 10px;
+}
+
+.pg__container select {
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 50px;
+	width: 150px;
+	margin: auto;
+	display: flex;
+	outline: none;
+	border: none;
+	transform: translateX(220px);
+	color: black;
+	background: rgba(255, 255, 255, 0.433);
+}
+
+.pg__container option {
+	font-size: 10px;
+	width: fit-content;
+	text-align: center;
+	padding: 5px;
+	background: #ce7b7b;
+}
+
+.pg__buttons {
+	display: flex;
+	padding: 10px 0;
+	gap: 20px;
+	justify-content: center;
+}
+
+.pg__buttons .pgBtn {
+	font-size: 20px;
+	padding: 20px 80px;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.55);
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+
+.pg__buttons .pgBtn:hover {
+	background-color: rgb(255, 195, 91);
+	color: white;
+}
+
+.copiedText {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: green;
+}

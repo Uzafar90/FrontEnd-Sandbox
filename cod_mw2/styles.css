@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #0e6c00;
+	font-family: 'Oswald', sans-serif;
+}
+
+.cod_main {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: black;
+	width: 1400px;
+	height: 800px;
+	border-radius: 30px;
+	box-shadow: 0 0 30px #000;
+	overflow: hidden;
+}
+
+.cod_bgImage {
+	position: absolute;
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0) 20.31%,
+			rgba(0, 0, 0, 0.8) 37.5%
+		),
+		url(https://www.guidingtech.com/wp-content/uploads/Call-of-Duty-Wallpapers-2_4d470f76dc99e18ad75087b1b8410ea9.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	transform: scaleX(-1);
+	border-radius: 30px;
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 3.5s;
+}
+
+@keyframes fade {
+	100% {
+		opacity: 1;
+	}
+}
+
+/* ----------------- Nav ------------------ */
+
+.cod_nav {
+	position: absolute;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 20px 40px;
+	transform: translateY(-80%);
+	animation: slide-down 0.5s linear forwards;
+	opacity: 0;
+	animation-delay: 4s;
+}
+
+.cod_nav img {
+	width: 70px;
+}
+
+.cod_nav .cod_nav_links {
+	display: flex;
+	gap: 60px;
+	margin-right: 100px;
+}
+
+.cod_nav .cod_nav_links p {
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(209, 209, 209);
+	transition: all 0.5s ease-in-out;
+}
+
+.cod_nav .cod_nav_links p:hover {
+	cursor: pointer;
+	color: #70ff00;
+}
+
+.cod_nav .cod_nav_links .active {
+	color: #70ff00;
+}
+
+@keyframes slide-down {
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* ----------------- Hero ------------------ */
+
+.cod_hero {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	height: 600px;
+}
+
+.cod_hero span {
+	position: absolute;
+	top: 21%;
+	left: 0;
+	width: 100%;
+	border: 300px solid rgba(103, 255, 10, 0.67);
+	clip-path: polygon(50% 0%, 0 42%, 100% 42%);
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 1s;
+}
+
+.cod_hero .cod_heading {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 1.5s;
+}
+
+.cod_hero .cod_heading h1 {
+	font-weight: 700;
+	font-size: 143px;
+	line-height: 212px;
+	color: #ffffff;
+	text-shadow: 0px 0px 29.8013px #000000;
+}
+
+.cod_hero hr {
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	border: none;
+	height: 0.7px;
+	background-color: #fff;
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 1.5s;
+}
+
+.cod_hero .cod_heading h3 {
+	font-weight: 700;
+	font-size: 47px;
+	line-height: 71px;
+	margin-left: -20px;
+	color: #ffffff;
+	text-shadow: 0px 0px 30px #000000;
+}
+
+.cod_hero .cod_subheading {
+	position: absolute;
+	top: 58%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 2s;
+}
+
+.cod_hero .cod_subheading p {
+	font-weight: 700;
+	font-size: 23.8411px;
+	line-height: 28px;
+	letter-spacing: 1em;
+	color: #ffffff;
+	text-shadow: 0px 0px 20px #000000;
+}
+
+.cod_hero .cod_subheading p:nth-child(2) {
+	letter-spacing: 0.2em;
+}
+
+/* ----------------- About------------------ */
+
+.cod_about {
+	position: absolute;
+	top: 71%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	width: 80%;
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 2.5s;
+}
+
+.cod_about p {
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	color: #b2b2b2;
+}
+
+/* ----------------- About------------------ */
+
+.cod_button {
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 3s;
+}
+
+.cod_button .btn {
+	background: rgba(60, 134, 2, 0.58);
+	border: 3px solid #70ff00;
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	transition: all 0.5s ease-in-out;
+}
+
+.cod_button .btn:hover {
+	cursor: pointer;
+	background: rgba(59, 134, 2, 0.724);
+}
+
+.cod_button .btn p {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+/* ----------------- Image------------------ */
+
+.cod_three_image {
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	width: 400px;
+	height: 400px;
+	opacity: 0;
+	animation: fade 1s linear forwards;
+	animation-delay: 3.5s;
+}
+
+.cod_three_image span {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	width: 60%;
+	height: 60%;
+	background: #70ff00;
+	filter: blur(50px);
+}
+
+.cod_three_image img {
+	position: absolute;
+	width: 100%;
+}
+
+@keyframes fade {
+	100% {
+		opacity: 1;
+	}
+}

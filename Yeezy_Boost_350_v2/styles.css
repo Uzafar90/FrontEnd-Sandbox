@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&display=swap');
+
+:root {
+	--primary-color: #ff4967;
+}
+.yeezy_white {
+	--primary-color: #e99757;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url(https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+	background-size: cover;
+	background-position: center;
+	backdrop-filter: blur(20px);
+	background-color: gray;
+	font-family: 'Radio Canada', sans-serif;
+	transition: 0.5s ease-in-out;
+}
+
+.yeezy_main {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	width: 1300px;
+	height: 750px;
+	border-radius: 30px;
+	box-shadow: 0 0 50px black;
+	overflow: hidden;
+}
+
+.bg_image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://www.kicksonfire.com/wp-content/uploads/2016/11/adidas-Yeezy-Boost-350-V2-117.jpg);
+	background-position: center;
+	background-size: cover;
+	filter: brightness(80%);
+	border-radius: 30px;
+	transition: 0.5s ease-in-out;
+}
+
+/* ----------------NAVBAR---------------- */
+
+.yeezy_nav {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.yeezy_nav p {
+	font-size: 12px;
+	color: #949494;
+	transition: all 0.5s;
+}
+
+.yeezy_nav p:hover {
+	cursor: pointer;
+	color: var(--primary-color);
+}
+
+.yeezy_nav .active {
+	color: var(--primary-color);
+}
+
+.yeezy_nav svg {
+	width: 20px;
+	fill: var(--primary-color);
+}
+
+/* ----------------SIDEBAR--------------- */
+
+.yeezy_sidebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	border-right: 0.5px solid rgb(71, 71, 71);
+	height: 100%;
+	width: 120px;
+	padding: 30px 0;
+}
+
+.yeezy_sidebar .yeezy_social {
+	display: flex;
+	align-items: center;
+	transform: rotate(-90deg);
+	gap: 30px;
+}
+
+.yeezy_sidebar .yeezy_social p {
+	font-size: 12px;
+	color: #949494;
+	transition: all 0.5s;
+}
+.yeezy_sidebar .yeezy_social p:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+.yeezy_sidebar .yeezy_lang {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 15px;
+	color: #bcbcbc;
+}
+
+.yeezy_sidebar .yeezy_lang .active {
+	color: var(--primary-color);
+}
+
+/* ----------------HERO--------------- */
+
+.yeezy_hero {
+	position: absolute;
+	top: 40%;
+	left: 65%;
+	color: #fff;
+}
+
+.yeezy_hero h2 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.yeezy_hero h1 {
+	margin-top: -20px;
+	font-size: 120px;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+
+/* ----------------RELEASE--------------- */
+
+.yeezy_release {
+	color: #fff;
+	position: absolute;
+	top: 20%;
+	left: 13%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.yeezy_release .yeezy_info p {
+	color: #949494;
+	font-weight: 500;
+}
+
+.yeezy_release .yeezy_info h3 {
+	color: var(--primary-color);
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.yeezy_about {
+	position: absolute;
+	bottom: 10%;
+	left: 13%;
+	width: 470px;
+}
+
+.yeezy_about p {
+	color: #949494;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+/* --------------Yeezy White------------- */
+
+.yeezy_color_switch {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	border: 3px solid #616161;
+	border-radius: 10px;
+	width: 250px;
+	height: 150px;
+	background-image: url(https://www.kicksonfire.com/wp-content/uploads/2016/11/adidas-Yeezy-Boost-350-V2-152.jpg?x58464);
+	background-size: cover;
+	background-position: center;
+	transition: all 0.5s;
+}
+
+.yeezy_color_switch:hover {
+	cursor: pointer;
+	scale: 1.05;
+	border: 3px solid #9d9d9d;
+}
